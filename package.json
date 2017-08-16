@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "npm install -g @angular/cli && ng serve",
+    "start": "ng serve",
     "build": "ng build",
+    "dist": "ng build && cp manifest.yml src/static/Staticfile dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
