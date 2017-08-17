@@ -1,19 +1,16 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div class="jumbotron text-center">
   <h1>
     Welcome to {{title}}!
   </h1>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://console.bluemix.net/apps/e6a67f67-c53d-4a58-99b6-6e77da2f7af5?paneId=overview&env_id=ibm:yp:us-south">Liberty Java App in Dev Env</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
-  </li>
-</ul>
-
+<div class="row">
+  <div class="col-sm-6"><app-retrievelinks> </app-retrievelinks></div>
+  <div class="col-sm-6">
+    <div>
+      <app-createlinks></app-createlinks>
+    </div>
+    <div>
+      <app-searchlinks></app-searchlinks>
+    </div>
+  </div>
+</div>
