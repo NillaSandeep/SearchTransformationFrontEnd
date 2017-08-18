@@ -5,22 +5,26 @@
       <fieldset class="form-group">
         <input [(ngModel)]="newlink.name" name="name" type="text"
                style="width: 300px;" class="form-control"
-               placeholder="Enter Description" id="Description"/>
+               placeholder="Enter Description" id="name" required/>
       </fieldset>
       <fieldset class="form-group">
         <input [(ngModel)]="newlink.link" name="link" type="text"
                style="width: 300px;" class="form-control"
-               placeholder="Enter Link" id="Link" />
+               placeholder="Enter URL" id="Link" required/>
       </fieldset>
       <fieldset class="form-group">
         <input [(ngModel)]="newlink.tag" name="tag" type="text"
                style="width: 300px;" class="form-control"
-               placeholder="Enter Tag" id="Tag" />
+               placeholder="Enter Tag" id="Tag" required/>
       </fieldset>
       <fieldset class="form-group">
               <input type="submit" class="btn btn-primary pull-left"
                       value="Submit" />
       </fieldset>
+      <div class="alert alert-success fade in" *ngIf="submitted">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>New link has been created successfully!</strong>
+      </div>
     </blockquote>
   </form>
 </div>

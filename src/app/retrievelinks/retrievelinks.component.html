@@ -1,6 +1,14 @@
 <div>
   <blockquote>
-    <div class="container" *ngFor="let link of links">
+    <form>
+      <fieldset class="form-group">
+        <input [(ngModel)]="searchText" name="keyword" type="text"
+               class="form-control"  style="width: 500px;"
+               placeholder="Enter keyword to search" id="keyword"/>
+      </fieldset>
+    </form>
+
+    <div class="container" *ngFor="let link of links | search : searchText ">
       <div class="row"><a href={{link.link}} >{{link.name}}</a></div>
       <div class="col-sm-4">{{link.tag}}</div>
     </div>
