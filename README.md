@@ -14,6 +14,14 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+
+## To deploy the application to Bluemix 
+
+Run `npm run dist` 
+Now change from current directory to dist directory `cd dist`
+Before pushing the application to cloud ensure you are logged into Bluemix CLI using `bx login`
+Inorder to push the application to the cloud use `cf push`
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
