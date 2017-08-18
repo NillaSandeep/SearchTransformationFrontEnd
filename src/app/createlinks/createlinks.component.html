@@ -1,0 +1,26 @@
+<div>
+  <h4>Create New Link</h4>
+  <form (ngSubmit)="onSubmit(newlink)" >
+    <blockquote>
+      <fieldset class="form-group">
+        <input [(ngModel)]="newlink.name" name="name" type="text"
+               style="width: 300px;" class="form-control"
+               placeholder="Enter Description" id="Description"/>
+      </fieldset>
+      <fieldset class="form-group">
+        <input [(ngModel)]="newlink.link" name="link" type="text"
+               style="width: 300px;" class="form-control"
+               placeholder="Enter Link" id="Link" />
+      </fieldset>
+      <fieldset class="form-group">
+        <input [(ngModel)]="newlink.tag" name="tag" type="text"
+               style="width: 300px;" class="form-control"
+               placeholder="Enter Tag" id="Tag" />
+      </fieldset>
+      <fieldset class="form-group">
+              <input type="submit" class="btn btn-primary pull-left"
+                      value="Submit" />
+      </fieldset>
+    </blockquote>
+  </form>
+</div>
